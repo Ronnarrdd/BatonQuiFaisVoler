@@ -1,0 +1,10 @@
+name: BatonQuiFaisVoler
+version: 1.0
+main: me.renard.batonquifaisvoler.Main
+api-version: 1.19
+author: Renard
+description: Un plugin qui fait s'envoler les joueurs lorsqu'ils sont frappés avec un bâton spécial.
+commands:
+  baton:
+    description: Donne un bâton spécial qui fait voler les joueurs et les entités lorsqu'ils sont frappés.
+    usage: /<command>
