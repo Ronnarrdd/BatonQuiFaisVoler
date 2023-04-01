@@ -8,3 +8,11 @@ commands:
   baton:
     description: Donne un bâton spécial qui fait voler les joueurs et les entités lorsqu'ils sont frappés.
     usage: /<command>
+
+permissions:
+  batonquifaisvoler.use:
+    description: Permet au joueur d'utiliser le bâton qui fait voler
+    default: true
+  batonquifaisvoler.command:
+    description: Permet au joueur d'utiliser la commande /baton
+    default: op

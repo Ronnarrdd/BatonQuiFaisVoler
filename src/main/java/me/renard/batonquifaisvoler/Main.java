@@ -29,10 +29,14 @@ public class Main extends JavaPlugin implements Listener, CommandExecutor {
         if (command.getName().equalsIgnoreCase("baton")) {
             if (sender instanceof Player) {
                 Player player = (Player) sender;
-                ItemStack baton = new ItemStack(Material.STICK);
-                baton.addUnsafeEnchantment(Enchantment.KNOCKBACK, 10);
-                player.getInventory().addItem(baton);
-                player.sendMessage("§aVous avez reçu le bâton qui fait voler !");
+                if (player.hasPermission("batonquifaisvoler.command")) {
+                    ItemStack baton = new ItemStack(Material.STICK);
+                    baton.addUnsafeEnchantment(Enchantment.KNOCKBACK, 10);
+                    player.getInventory().addItem(baton);
+                    player.sendMessage("§aVous avez reçu le bâton qui fait voler !");
+                } else {
+                    player.sendMessage("§cVous n'avez pas la permission d'utiliser cette commande.");
+                }
             } else {
                 sender.sendMessage("§cCette commande ne peut être exécutée que par un joueur !");
             }
