@@ -1,6 +1,5 @@
 # BatonQuiFaisVoler
-Un plugin Spigot 1.19 qui permets de faire voler les joueurs avec un baton spécial
-BatonQuiFaisVoler
+<b>Un plugin Spigot 1.19 qui permets de faire voler les joueurs avec un baton spécial</b><br><br>
 BatonQuiFaisVoler est un plugin Minecraft qui ajoute un bâton spécial capable de faire voler les joueurs, les animaux et les monstres lorsqu'ils sont frappés. Le plugin inclut également une commande pour obtenir le bâton.
 
 <b>Fonctionnalités :</b> <br>
